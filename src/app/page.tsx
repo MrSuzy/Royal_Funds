@@ -29,7 +29,7 @@ export default function HomePage() {
         </AspectRatio>
         <div style={{ position: 'absolute', top: '30%', left: '10%', transform: 'translate(-20%, 0%)', color: 'white', textAlign: 'left' }}>
         <h1 style={{ fontSize: '68px', fontWeight: '700', fontFamily: 'Roboto, sans-serif', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>Royal Funds</h1>
-        <h2 style={{ fontSize: '28px',fontWeight: '400',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>Funding everywhere</h2>
+        <h2 style={{ fontSize: '28px',fontWeight: '400',textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)' }}>One vision, Many chains</h2>
   </div>
       </div>
 

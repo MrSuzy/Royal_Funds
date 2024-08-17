@@ -7,6 +7,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/src/component/ui/dialog"
+import { InputForm } from "@/src/component/ui/inputMax";
+
 
 
 function DonateBox(){
@@ -16,13 +18,12 @@ function DonateBox(){
       <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-white text-center">
         <h2 className="text-4xl font-bold mb-4">13 Unique Donors</h2>
           <Dialog>
-              <DialogTrigger>Open</DialogTrigger>
-                  <DialogContent>
+              <DialogTrigger>Donate Now!</DialogTrigger>
+                  <DialogContent> 
                       <DialogHeader>
-                      <DialogTitle>Are you absolutely sure?</DialogTitle>
+                      <DialogTitle>Amount?</DialogTitle>
                       <DialogDescription>
-                          This action cannot be undone. This will permanently delete your account
-                          and remove your data from our servers.
+                        <InputForm/>
                       </DialogDescription>
                       </DialogHeader>
                   </DialogContent>
