@@ -30,7 +30,8 @@
     "tailwind": "^4.0.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "thirdweb": "^5.42.0",
+    "thirdweb": "^5.46.1",
+    "web3": "^4.11.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {
