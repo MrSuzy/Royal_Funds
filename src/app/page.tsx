@@ -18,10 +18,7 @@ export default function HomePage() {
             alt="Photo by Drew Beamer"
             width={100}
             height={100}
-
-            className="static h-full w-full left-0 right-0 text-transparent
-"
-
+            className="static h-full w-full left-0 right-0 text-transparent"
           />
 
 
