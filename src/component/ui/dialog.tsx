@@ -53,7 +53,7 @@ const DialogContent = React.forwardRef<
 ))
 DialogContent.displayName = DialogPrimitive.Content.displayName
 
-const DialogHeader = ({
+const  DialogHeader = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => (

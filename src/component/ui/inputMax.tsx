@@ -54,7 +54,7 @@ export function InputForm() {
               <FormControl>
                 <Input 
                   type="number" 
-                  placeholder="Enter a number" 
+                  placeholder="0.00" 
                   {...field} 
                   onChange={(e) => field.onChange(Number(e.target.value))}
                 />

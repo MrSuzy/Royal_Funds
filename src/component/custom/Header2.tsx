@@ -8,7 +8,7 @@ const Header2 = () => (
   <header className="bg-black text-white p-4">
     <div className="text-2xl font-semibold mb-4">
 
-        <ProjectCounter/>
+        {/* <ProjectCounter/> */}
 
     </div>
     <div className="text-2xl font-semibold mb-4">

@@ -4,7 +4,7 @@ import ConnectWallet from "./ConnectWallet";
 const Header = () => (
   <nav className="bg-black text-white p-4 flex justify-between items-center">
   <div className="text-xl font-bold">
-      Royal-Funds
+      Chain-Funds
       <span className="border-b border-gray-700 block mt-1"></span>
   </div>
   <div className="flex space-x-8">
