@@ -12,9 +12,7 @@ export default function FoodBankWallet() {
       <Header />
       <HeroFoodBank />
       <DonateBox />
-      <div className="container mx-auto px-6">
-        <BarChartComponent />
-      </div>
+
     </>
   );
 }

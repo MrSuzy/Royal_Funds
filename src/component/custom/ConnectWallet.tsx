@@ -7,8 +7,8 @@ export const client = createThirdwebClient({ clientId: "0fc6b80f44c99ad94e0bc26c
 
 export default function App() {
   return (
-    <ThirdwebProvider>
+    
       <ConnectButton client={client} />
-    </ThirdwebProvider>
+    
   );
 }

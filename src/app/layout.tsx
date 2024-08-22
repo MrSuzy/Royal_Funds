@@ -1,21 +1,16 @@
 "use client";
 
-// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// import ClientProvider from "./clientProvider";
 import "./globals.css";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { WagmiProvider } from 'wagmi'
-import { config } from '../../config'
+import { ThirdwebProvider } from "../component/custom/ThirdwebProvider";
+import Header2 from "../component/custom/Header2";
 
-const queryClient = new QueryClient();
-
+const activeChain = "binance-testnet";
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   title: "Royal-Funds",
-//   description: "One Vision, Many Chains:",
-// };
+// Initialize a QueryClient instance
+const queryClient = new QueryClient();
 
 export default function RootLayout({
   children,
@@ -23,19 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-          {/* <QueryClientProvider client={queryClient}>
-          {children}
-          </QueryClientProvider > */}
-          <WagmiProvider config={config}>
-           <QueryClientProvider client={queryClient}>
+    // <QueryClientProvider client={queryClient}>
+        <html lang="en">
+          <body className={inter.className}>
+            {/* <Header2></Header2> */}
+            <ThirdwebProvider>
             {children}
-            </QueryClientProvider>
-          </WagmiProvider>
+            </ThirdwebProvider>
+          </body>
+        </html>
+      
 
-
-      </body>
-    </html>
   );
 }

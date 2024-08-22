@@ -1,5 +1,6 @@
-// src/components/Header.js
+
 import ConnectWallet from "./ConnectWallet";
+import Link from "next/link";
 
 const Header = () => (
   <nav className="bg-black text-white p-4 flex justify-between items-center">
@@ -8,9 +9,9 @@ const Header = () => (
       <span className="border-b border-gray-700 block mt-1"></span>
   </div>
   <div className="flex space-x-8">
-      <a href="/" className="hover:text-gray-300">Funding</a>
-      <a href="#" className="hover:text-gray-300">Team</a>
-      <a href="#" className="hover:text-gray-300">Food</a>
+      <a href="/" className="hover:text-gray-300">Home</a>     
+      <Link href="/Funding" className="hover:text-gray-300">Funding</Link>
+      <Link href="/Food" className="hover:text-gray-300">Food</Link>
   </div>
   <ConnectWallet></ConnectWallet>
   
