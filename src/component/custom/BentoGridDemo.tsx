@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import {
@@ -5,12 +7,24 @@ import {
   IconHandClick,
   IconEye,
 } from "@tabler/icons-react";
+import startFundingRound from "@/contracts/startFundingRound";
+
+// Function to handle the Food Bank Wallet action
+const handleFoodBankWalletClick = () => {
+  return startFundingRound
+};
+
+
 
 function BentoGridDemo() {
   return (
     <BentoGrid className="max-w-8xl mx-auto h-full w-full">
       {items.map((item, i) => (
-        <a href={item.redirectUrl} key={i} className="block"> {/* Anchor tag to wrap the grid item */}
+        <div
+          key={i}
+          className="block cursor-pointer" // Changed from <a> to <div>
+          onClick={item.action} // Attach the corresponding action to each item
+        >
           <BentoGridItem
             title={item.title}
             description={item.description}
@@ -18,7 +32,7 @@ function BentoGridDemo() {
             icon={item.icon}
             className={i === 3 || i === 6 ? "md:col-span-2" : ""}
           />
-        </a>
+        </div>
       ))}
     </BentoGrid>
   );
@@ -40,8 +54,7 @@ const items = [
       </Skeleton>
     ),
     icon: <IconEye className="h-4 w-4 text-neutral-500" />,
-    redirectUrl: "/food-bank-wallet",  
-    
+    action: handleFoodBankWalletClick, // Attach the function to be called
   },
   {
     title: "YEAR OF THE CHEF",
@@ -52,7 +65,7 @@ const items = [
       </Skeleton>
     ),
     icon: <IconHandClick className="h-4 w-4 text-neutral-500" />,
-    redirectUrl: "/year-of-the-chef", 
+    // action: handleYearOfTheChefClick, // Attach the function to be called
   },
   {
     title: "Potlock",
@@ -63,9 +76,8 @@ const items = [
       </Skeleton>
     ),
     icon: <IconFilter className="h-4 w-4 text-neutral-500" />,
-    redirectUrl: "/potlock", 
+    // action: handlePotlockClick, // Attach the function to be called
   },
 ];
-
 
 export default BentoGridDemo;

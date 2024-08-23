@@ -1,12 +1,12 @@
 // app/page.tsx
 
-import Header from "@/src/component/custom/Header";
-import Header2 from "@/src/component/custom/Header2";
+import Header from "@/component/custom/Header";
+import Header2 from "@/component/custom/Header2";
 import Image from "next/image"
-import { AspectRatio } from "@/src/component/ui/aspect-ratio"
-import './globalss.css';
-import BentoGridDemo from "@/src/component/custom/BentoGridDemo"
-import RootLayout from "@/src/app/layout";
+import { AspectRatio } from "@/component/ui/aspect-ratio"
+import BentoGridDemo from "@/component/custom/BentoGridDemo"
+import RootLayout from "@/app/layout";
+
 
 
 export default function Funding() {

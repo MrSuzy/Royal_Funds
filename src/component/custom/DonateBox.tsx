@@ -6,8 +6,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/src/component/ui/dialog"
-import { InputForm } from "@/src/component/ui/inputMax";
+} from "@/component/ui/dialog"
+import { InputForm } from "@/component/ui/inputMax";
 
 
 

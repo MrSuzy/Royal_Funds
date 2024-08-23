@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 
-import { Button } from "@/src/component/ui/button"
+import { Button } from "@/component/ui/button"
 import {
   Form,
   FormControl,
@@ -13,9 +13,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/src/component/ui/form"
-import { Input } from "@/src/component/ui/input"
-import { toast } from "@/src/component/ui/use-toast"
+} from "@/component/ui/form"
+import { Input } from "@/component/ui/input"
+import { toast } from "@/component/ui/use-toast"
 
 const FormSchema = z.object({
   numberInput: z.number({

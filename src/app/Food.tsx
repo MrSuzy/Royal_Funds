@@ -1,11 +1,11 @@
 // app/page.tsx
 
-import Header from "@/src/component/custom/Header";
-import Header2 from "@/src/component/custom/Header2";
+import Header from "@/component/custom/Header";
+import Header2 from "@/component/custom/Header2";
 import Image from "next/image"
-import { AspectRatio } from "@/src/component/ui/aspect-ratio"
-import './globalss.css';
-import BentoGridDemo from "@/src/component/custom/BentoGridDemo"
+import { AspectRatio } from "@/component/ui/aspect-ratio"
+import '@styles/globals.css';
+import BentoGridDemo from "@/component/custom/BentoGridDemo"
 
 export default function Food() {
 
